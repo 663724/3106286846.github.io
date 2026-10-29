@@ -1,0 +1,33 @@
+# 站点基本信息（改这几行就行）
+title: "0xWP"
+description: "CTF Writeups · 一个慢慢攒题的笔记本"
+author: "663724"
+lang: zh-CN
+timezone: Asia/Shanghai
+
+# 发布地址：
+#   - 仓库名是 <你的用户名>.github.io  → url 填 https://<用户名>.github.io ，baseurl 留空
+#   - 仓库名是别的（比如 ctf-wp）    → url 填 https://<用户名>.github.io ，baseurl: "/ctf-wp"
+url: "https://663724.github.io"
+baseurl: "/3106286846.github.io"
+
+# 文章永久链接：/2026/09/22/hello/
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-feed
+
+# 不参与构建的东西
+exclude:
+  - README.md
+  - templates
+  - Gemfile
+  - Gemfile.lock
